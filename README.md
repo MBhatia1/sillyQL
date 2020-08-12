@@ -9,3 +9,5 @@ A C++ Project for my EECS 281: Data Structures & Algorithms class which emulates
 + `PRINT` - print specified rows
 + `JOIN` - join two tables and print result. This was implemented using hash join to optimize efficiency
 + `REMOVE` - remove existing table from the database
+
+Due to restrictions from the College of Engineering at the University of Michigan I cannot post my source code. If you are a recruiter insterested in seeing this, please email me at manavb@umich.edu. I have included input files so that you may understand what the problem entailed.
