@@ -1,0 +1,34 @@
+CREATE comics 4 string int bool int name age is_cool id
+INSERT INTO comics 4 ROWS
+batman 33 true 1
+spiderman 32 false 2
+daredevil 33 true 3
+spiderman 30 true 4
+GENERATE FOR comics bst INDEX ON name
+PRINT FROM comics 4 is_cool name age id WHERE age < 31
+PRINT FROM comics 3 name age id WHERE name > john
+DELETE FROM comics WHERE age = 32
+INSERT INTO comics 4 ROWS
+batman 30 false 5
+batman 25 true 6
+superman 33 true 7
+spiderman 30 true 8
+PRINT FROM comics 4 is_cool name age id WHERE is_cool < false
+PRINT FROM comics 3 name age id WHERE name > batman
+PRINT FROM comics 4 is_cool name age id WHERE name < elizabeth
+INSERT INTO comics 4 ROWS
+hulk 33 false 9
+hulk 32 true 10
+superman 33 true 11
+batman 33 true 12
+PRINT FROM comics 4 is_cool name age id WHERE is_cool > true
+PRINT FROM comics 3 name age id WHERE name > harry
+DELETE FROM comics WHERE name = superman
+PRINT FROM comics 4 is_cool name age id WHERE age = 33
+GENERATE FOR comics hash INDEX ON name
+PRINT FROM comics 4 is_cool name age id WHERE name = spiderman
+PRINT FROM comics 3 name age id WHERE name > larry
+DELETE FROM comics WHERE name = spiderman
+PRINT FROM comics 4 is_cool name age id WHERE age = 32
+DELETE FROM comics WHERE name = spiderman
+QUIT

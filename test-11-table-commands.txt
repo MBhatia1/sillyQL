@@ -1,0 +1,21 @@
+CREATE comics 4 string int bool int name age is_cool id
+INSERT INTO comics 1 ROWS
+batman 33 true 33
+PRINT FROM comics 3 name age id WHERE name > larry
+PRINT FROM comics 3 name age id ALL
+GENERATE FOR comics bst INDEX ON name
+PRINT FROM comics 3 name age id WHERE name > larry
+PRINT FROM comics 3 name age id ALL
+GENERATE FOR comics hash INDEX ON name
+PRINT FROM comics 3 name age id WHERE name > larry
+PRINT FROM comics 3 name age id ALL
+JOIN comics AND comics WHERE name = name AND PRINT 2 id 1 age 2
+DELETE FROM comics WHERE name = batman
+PRINT FROM comics 3 name age id WHERE name > larry
+PRINT FROM comics 3 name age id ALL
+CREATE people 4 string int bool int name lol is_cool id
+INSERT INTO people 1 ROWS
+superman 33 false 5
+JOIN comics AND people WHERE age = lol AND PRINT 2 id 1 name 2
+REMOVE comics
+QUIT

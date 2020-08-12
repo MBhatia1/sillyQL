@@ -1,0 +1,26 @@
+CREATE universe 5 string string int bool double name nickname years is_hot dog-years
+CREATE universe 5 string string int bool double name nickname years is_hot dog-years
+INSERT INTO universe1 3 ROWS
+joe jimmy 19 true 65.5
+amy ames 20 true 61.8
+Richard dick 21 true 71.7
+PRINT FROM universe 2 nickname name WHERE dog-years > 40
+DELETE FROM water WHERE num < 7
+INSERT INTO universe 2 ROWS
+joe jimmy 19 true 65.5
+amy ames 20 true 61.8
+GENERATE FOR universe hash INDEX ON nickname
+PRINT FROM universe2 2 is_hot age ALL
+INSERT INTO universe 2 ROWS
+hoe jim 1 false 6.5
+amyyy am 32 true 6.8
+PRINT FROM universe 4 is_funny name years is_hot dog-years ALL
+REMOVE singularity
+INSERT INTO multiverse 2 ROWS
+jim jilly 25 false 22.9
+john Johnny 10 true 61.9
+PRINT FROM universe 3 is_funny name age WHERE bruh > 20
+JOIN school AND universe WHERE detentions = replies AND PRINT 2 year 1 year 2
+REMOVE universe
+REMOVE universe
+QUIT

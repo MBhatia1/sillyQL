@@ -1,0 +1,42 @@
+CREATE computer 2 string string speed hello
+INSERT INTO computer 2 ROWS
+60 hi
+50 bye
+DELETE FROM computer WHERE speed > 40
+PRINT FROM computer 1 speed ALL
+INSERT INTO computer 4 ROWS
+30 lol
+70 lmao
+20 bruh
+50 see
+DELETE FROM computer WHERE speed = 50
+CREATE smartphone 4 string string string string is_expensive? generation thinness brand 
+PRINT FROM computer 1 hello ALL
+INSERT INTO smartphone 3 ROWS
+true 7 7.3 Samsung
+true 8 5.5 Apple
+false 5 8.9 LG
+true 10 10.8 Nokia
+INSERT INTO smartphone 2 ROWS
+true 1 9.0 HTC
+true 10 10.8 Nokia
+DELETE FROM smartphone WHERE is_expensive > true
+PRINT FROM smartphone 4 name weight age is_funny ALL
+DELETE FROM smartphone WHERE generation < 8
+INSERT INTO smartphone 2 ROWS
+false 12 19.0 HTC
+true 0 1.8 Nokia
+PRINT FROM smartphone 4 is_expensive? generation thinness brand ALL
+DELETE FROM smartphone WHERE thinness = 20
+PRINT FROM smartphone 4 name is_expensive? generation thinness brand ALL
+DELETE FROM smartphone WHERE is_expensive > false
+PRINT FROM smartphone 4 is_expensive? generation thinness brand ALL
+INSERT INTO computer 4 ROWS
+20 rofl
+80 hihi
+40 great
+10 life
+JOIN computer AND smartphone WHERE brand = speed AND PRINT 1 brand 2
+REMOVE smartphone
+REMOVE computer
+QUIT

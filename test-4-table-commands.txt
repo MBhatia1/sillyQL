@@ -1,0 +1,35 @@
+CREATE people 3 bool string string is_strong race medals
+INSERT INTO people 3 ROWS
+false African-American 3
+true Indian 1
+false Indian 5
+PRINT FROM people 3 medals race is_strong WHERE medals < 1
+INSERT INTO people 4 ROWS
+false White 2
+true Latino 5
+false Jamaican 4
+true Colombian 3
+GENERATE FOR people bst INDEX ON medals
+PRINT FROM people 2 medals race ALL
+PRINT FROM people 2 medals race WHERE is_strong = true
+GENERATE FOR people hash INDEX ON medals
+PRINT FROM people 2 is_strong medals ALL
+GENERATE FOR people hash INDEX ON is_strong
+INSERT INTO people 2 ROWS
+false Indian 7
+true Latino 2
+PRINT FROM people 3 medals race is_strong WHERE is_strong > true
+INSERT INTO people 5 ROWS
+true Canadian 2
+false Jesus 5
+false Christ 6
+true Mexian 9
+false Hispanic 8
+DELETE FROM people WHERE name = Hispanic
+PRINT FROM people 3 is_strong race medals WHERE is_strong = true
+INSERT INTO people 1 ROWS
+false Colombian 6
+GENERATE FOR people hash INDEX ON medals
+PRINT FROM people 2 is_strong medals ALL
+PRINT FROM people 3 is_strong race medals WHERE race < Colombian
+QUIT

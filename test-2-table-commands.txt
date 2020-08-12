@@ -1,0 +1,34 @@
+CREATE water 3 bool string int is_hot? is_cold? num
+INSERT INTO water 7 ROWS
+false Bob 2
+true John 2
+false John 3
+true Mary 3
+false Peter 5
+false Paul 6
+true John 1
+GENERATE FOR water bst INDEX ON num
+PRINT FROM water 1 num WHERE is_cold? > John
+DELETE FROM water WHERE is_hot? = false
+PRINT FROM water 1 num WHERE is_hot? > true
+DELETE FROM water WHERE is_hot? = false
+INSERT INTO water 3 ROWS
+true Jake 2
+true Alex 4
+false Jake 3
+PRINT FROM water 1 is_hot? WHERE num > 4
+DELETE FROM water WHERE is_hot? = true
+PRINT FROM water 1 num WHERE is_hot? > false
+DELETE FROM water WHERE num < 7
+PRINT FROM water 1 num WHERE is_cold? = Paul
+INSERT INTO water 3 ROWS
+false Mary 4
+false Mary 9
+true John 4
+PRINT FROM water 2 is_hot? is_cold? WHERE is_cold? < Mary
+DELETE FROM water WHERE is_hot? = false
+PRINT FROM water 2 is_hot? is_cold? WHERE num > 3
+GENERATE FOR water hash INDEX ON num
+PRINT FROM water 2 is_hot? is_cold? WHERE num > 3
+REMOVE water
+QUIT

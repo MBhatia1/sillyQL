@@ -1,0 +1,33 @@
+CREATE school 3 string string int major year detentions
+INSERT INTO school 4 ROWS
+Computer-science freshman 3
+Electrical freshman 3
+Mechanical sophomore 3
+Aerospace senior 5
+CREATE piazza 3 string string int major year replies
+INSERT INTO piazza 6 ROWS
+Art sophomore 5
+Bio sophomore 3
+Electrical graduate 2
+Mechanical junior 4
+Chem sophomore 5
+Aerospace graduate 2
+GENERATE FOR school bst INDEX ON year
+PRINT FROM school 2 major year WHERE year = sophomore
+DELETE FROM school WHERE year > freshman
+PRINT FROM school 2 major year WHERE year > sophomore
+GENERATE FOR school bst INDEX ON major
+PRINT FROM school 1 year WHERE year = sophomore
+GENERATE FOR school bst INDEX ON major
+JOIN school AND piazza WHERE major = major AND PRINT 2 major 1 year 2
+DELETE FROM piazza WHERE replies > 2
+PRINT FROM school 2 major year WHERE major < Aerospace
+PRINT FROM school 1 year ALL
+JOIN school AND piazza WHERE year = year AND PRINT 2 major 1 major 2
+GENERATE FOR school bst INDEX ON sex
+PRINT FROM school 1 major WHERE year > sophomore
+JOIN school AND piazza WHERE major = major AND PRINT 2 major 1 year 2
+JOIN piazza AND school WHERE detentions = replies AND PRINT 2 year 1 year 2
+JOIN piazza AND school WHERE replies = detentions AND PRINT 2 major 1 sex 2
+JOIN piazza AND school WHERE replies = sex AND PRINT 2 major 1 year 2
+QUIT

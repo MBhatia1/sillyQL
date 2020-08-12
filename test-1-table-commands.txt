@@ -1,0 +1,23 @@
+CREATE dogs 3 string bool double breed is_ferocious years
+INSERT INTO dogs 4 ROWS
+Poodle true 7.9
+German-Shepherd true 9.8
+Pitbull false 5.3
+Cat true 15.2
+PRINT FROM dogs 2 years breed ALL
+DELETE FROM dogs WHERE breed = Labrador
+INSERT INTO dogs 3 ROWS
+Labrador false 4.3
+Corgi true 5.7
+Eagle false 7.3
+DELETE FROM dogs WHERE years = 5.7
+PRINT FROM dogs 3 breed years is_ferocious ALL
+DELETE FROM dogs WHERE is_ferocious = true
+GENERATE FOR dogs bst INDEX ON years
+PRINT FROM dogs 2 breed is_ferocious ALL
+PRINT FROM dogs 3 years is_ferocious breed ALL
+DELETE FROM dogs WHERE years = 4.3
+GENERATE FOR dogs hash INDEX ON years
+PRINT FROM dogs 3 breed years is_ferocious WHERE years < 9.8
+REMOVE dogs
+QUIT

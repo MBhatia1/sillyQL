@@ -1,0 +1,23 @@
+#idk this is boring
+CREATE hello 6 int bool int double string double lol rofl lmao hi drop top
+INSERT INTO hello 7 ROWS 
+5 false 10 15.0 hi 22.0
+6 true 9 15.7 great 28.7
+7 false 30 15.9 life 27.9
+8 false 40 16.8 why 32.8
+9 false 7 25.2 do 21.3
+10 true 50 35.4 I  32.4
+11 true 30 25.2 feel 12.9
+DELETE FROM hello WHERE rofl = true
+JOIN hello AND hello WHERE lol = lmao AND PRINT 3 lmao 1 drop 2 top 1
+GENERATE FOR hello hash INDEX ON lmao
+PRINT FROM hello 3 lmao hi drop WHERE lol > 7
+INSERT INTO hello 2 ROWS
+12 false 14 27.4 so 2.4
+13 true 15 5.2 bored 2.9
+INSERT INTO hello 1 ROWS
+14 true 16 37.4 akls 7.4
+INSERT INTO hello 1 ROWS
+12 false 18 47.4 dask 8.4
+PRINT FROM hello 1 lmao WHERE top > 21.0
+QUIT
